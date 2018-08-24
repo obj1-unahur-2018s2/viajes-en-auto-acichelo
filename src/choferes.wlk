@@ -45,3 +45,38 @@ object juana
 		}
 	}
 }
+
+object lucia
+{
+	
+	method remplazoChofer(choferes)
+	{
+	 console.println("Lucia va a remplazar a " + choferes)
+	 
+	}
+	
+	method precioViaje(cliente, kms)
+	 { 
+	 	var choferes=null//arreglar es como roque
+	 	return choferes.precioViaje(cliente,kms)
+	 }
+	
+}
+
+
+object melina
+{
+	method precioViaje(cliente, kms)
+	 { 
+		return cliente.precioPactadoPorKm() * kms-3
+	}
+}
+
+
+
+
+
+
+
+
+

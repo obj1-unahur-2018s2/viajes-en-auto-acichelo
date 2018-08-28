@@ -29,11 +29,18 @@ object teresa
 	}
 }
 
-object melina //arreglar
+
+object melina
 {
-	
-	method precioViaje(cliente, kms)
-	 { 
-		return cliente.precioPactadoPorKm() * kms-3
+	var clienteQueReemplaza
+	var precio=-3
+	method trabajaParaCliente(cliente)
+	{
+	clienteQueReemplaza=cliente
 	}
+
+    method precioViaje(cliente,kms)
+    {
+    	return clienteQueReemplaza.precioViaje(cliente,kms)-precio
+    }
 }

@@ -48,17 +48,16 @@ object juana
 
 object lucia
 {
+	var choferQueReemplaza
 	
-	method remplazoChofer(choferes)
+	method remplazoChofer(chofer)
 	{
-	 console.println("Lucia va a remplazar a " + choferes)
-	 
+	 choferQueReemplaza=chofer
 	}
 	
 	method precioViaje(cliente, kms)
 	 { 
-	 	var choferes=null//arreglar es como roque
-	 	return choferes.precioViaje(cliente,kms)
+	 	return choferQueReemplaza.precioViaje(cliente,kms)
 	 }
 	
 }
